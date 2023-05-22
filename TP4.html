@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encriptar y Desencriptar Números</title>
+  <script src="TP4.js"> </script>
+</head>
+<body>
+  <h1>Encriptar y Desencriptar Números</h1>
+
+  <h2>Encriptar</h2>
+  <form>
+    <label for="numero">Número de 4 dígitos:</label>
+    <input type="number" id="numero" required>
+    <button type="button" onclick="encriptar()">Encriptar</button>
+  </form>
+
+  <h2>Desencriptar</h2>
+  <form>
+    <label for="numeroEncriptado">Número encriptado de 4 dígitos:</label>
+    <input type="number" id="numeroEncriptado" required>
+    <button type="button" onclick="desencriptar()">Desencriptar</button>
+  </form>
+
+  <h2>Resultado</h2>
+  <div id="resultado">
+    <span id="resultadoTexto"></span>
+  </div>
+
+</body>
+</html>
