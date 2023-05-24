@@ -1,11 +1,23 @@
 function encriptar() {
   var numero = parseInt(document.getElementById("numero").value);
+  
+  if (numero > 9999) {
+    alert("Solo se permiten números de hasta 4 dígitos.");
+    return;
+  }
+
   var numeroEncriptado = encriptarNumero(numero);
   document.getElementById("resultado").innerHTML = "Número encriptado: " + numeroEncriptado;
 }
 
+
 function desencriptar() {
   var numeroEncriptado = parseInt(document.getElementById("numeroEncriptado").value);
+
+  if (numeroEncriptado > 9999) {
+    alert("Solo se permiten números de hasta 4 dígitos.");
+    return;
+  }
   var numeroDesencriptado = desencriptarNumero(numeroEncriptado);
   document.getElementById("resultado").innerHTML = "Número desencriptado: " + numeroDesencriptado;
 }

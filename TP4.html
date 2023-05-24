@@ -10,14 +10,14 @@
   <h2>Encriptar</h2>
   <form>
     <label for="numero">Número de 4 dígitos:</label>
-    <input type="number" id="numero" required>
+    <input type="number" id="numero" minlength="4" maxlength="4">
     <button type="button" onclick="encriptar()">Encriptar</button>
   </form>
 
   <h2>Desencriptar</h2>
   <form>
     <label for="numeroEncriptado">Número encriptado de 4 dígitos:</label>
-    <input type="number" id="numeroEncriptado" required>
+    <input type="number" id="numeroEncriptado" minlength="4" maxlength="4">
     <button type="button" onclick="desencriptar()">Desencriptar</button>
   </form>
 
